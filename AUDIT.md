@@ -87,4 +87,6 @@ Petrova, P., Schwarz, N. & Song, H. (2012). Fluency and social influence (W7)
 Labrecque, L. I. & Milne, G. R. (2011). Exciting red and competent blue (W8)
 
 **Added after building**
-[Dated. From the first prompt for B, nothing above this heading changes.]
+2026-11-01 – B's own default (found while building B). Our first B build pre-selected "Lift" under "Lift access?". That default hides the $20 no-lift charge, which is the very sludge B was meant to remove. We changed it to nothing selected, with the hint "Choose lift access to complete your total" (PROMPTS.md, Entries 7–8). Lesson: a repair can bring the sludge back through a default.
+----------------------------------------------------------------------------------------------------------------------------------
+2026-11-01 – Kept B's visual changes to the repaired elements only. To avoid "a prettier B", the "Pay now / Pay on delivery day" split, the toggles and the safety card change only the elements behind Findings 1–3 and 6. Header, layout and colours are identical to A.
