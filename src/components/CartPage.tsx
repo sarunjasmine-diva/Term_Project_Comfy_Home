@@ -4,10 +4,9 @@ import { Trash2, ChevronDown } from 'lucide-react';
 
 interface CartPageProps {
   onCheckOut: () => void;
-  variant: string;
 }
 
-export const CartPage: React.FC<CartPageProps> = ({ onCheckOut, variant }) => {
+export const CartPage: React.FC<CartPageProps> = ({ onCheckOut }) => {
   const [quantity, setQuantity] = useState(1);
   const [itemRemoved, setItemRemoved] = useState(false);
 
@@ -18,23 +17,6 @@ export const CartPage: React.FC<CartPageProps> = ({ onCheckOut, variant }) => {
 
   return (
     <div className="min-h-screen bg-white text-neutral-900 font-sans flex flex-col">
-      {/* Short Task Instruction Banner at Top */}
-      <div className="bg-[#0058a3] text-white px-4 py-3 shadow-xs">
-        <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-          <div className="flex items-center gap-2">
-            <span className="bg-[#ffd800] text-neutral-950 font-black px-2 py-0.5 rounded text-[11px] uppercase tracking-wide">
-              Experiment Task
-            </span>
-            <span className="font-medium text-neutral-100">
-              Imagine you are buying a bookcase for your room. You have added the <strong>ARLO</strong> bookcase to your shopping cart. Review your cart details and proceed by clicking <strong>"Check out"</strong>.
-            </span>
-          </div>
-          <div className="text-[11px] text-blue-200 font-mono flex-shrink-0">
-            Study Variant: {variant}
-          </div>
-        </div>
-      </div>
-
       {/* Clean Minimalist Header (Fictional Brand COMFY HOME) */}
       <header className="border-b border-neutral-200 bg-white">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between">
@@ -152,7 +134,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onCheckOut, variant }) => {
                     </span>
                   </div>
 
-                  {/* Delivery price line: Exactly matching screenshot */}
+                  {/* Delivery price line */}
                   <div className="flex justify-between items-center">
                     <span>Delivery price: From $10</span>
                     <span className="font-semibold text-neutral-900">
@@ -161,7 +143,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onCheckOut, variant }) => {
                   </div>
                 </div>
 
-                {/* Subtotal line: Exactly matching screenshot */}
+                {/* Subtotal line */}
                 <div className="py-6 border-b border-neutral-300 flex justify-between items-baseline">
                   <span className="text-sm sm:text-base font-bold text-neutral-900">
                     Subtotal (excl. assembly fees)
@@ -188,7 +170,7 @@ export const CartPage: React.FC<CartPageProps> = ({ onCheckOut, variant }) => {
 
       {/* Simple footer */}
       <footer className="border-t border-neutral-200 py-6 text-center text-xs text-neutral-500">
-        <p>© COMFY HOME Singapore • Educational Research Prototype</p>
+        <p>© COMFY HOME Singapore</p>
       </footer>
     </div>
   );
