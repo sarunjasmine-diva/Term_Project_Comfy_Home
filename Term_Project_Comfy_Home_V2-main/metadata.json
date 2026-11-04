@@ -1,0 +1,7 @@
+{
+  "name": "COMFY HOME - Affordable Furniture & Home Inspiration",
+  "description": "Shop affordable furniture, home decor, smart storage and room ideas at COMFY HOME Singapore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
